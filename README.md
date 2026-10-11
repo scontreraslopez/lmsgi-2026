@@ -9,7 +9,7 @@ El módulo recorre el tratamiento de la información con lenguajes de marcas: fu
 | UP | Unidad |
 |---|---|
 | [UP01](UP01.md) | Lenguajes de marcas y HTML inicial |
-| UP02 | HTML I |
+| [UP02](UP02.md) | HTML I |
 | UP03 | HTML II |
 | UP04 | Hojas de estilos I |
 | UP05 | Hojas de estilos II |
