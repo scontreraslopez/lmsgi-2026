@@ -1,0 +1,199 @@
+/* =========================================================
+   UP04 · Actividad 2: Club de escalada Granito
+   Solución de ejemplo (solo contenidos de la UP04)
+   ========================================================= */
+
+/* 1. Fuentes de Google Fonts (siempre al principio del archivo) */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Oswald:wght@500;700&display=swap");
+
+/* 2. Modelo de caja: el ancho incluye relleno y borde */
+* {
+  box-sizing: border-box;
+}
+
+/* 3. Estilos generales */
+body {
+  margin: 0;
+  background-color: #eee7df;
+  color: #2b2622;
+  font-family: "Mulish", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Selector agrupado: todos los textos "de titular" */
+h1,
+h2,
+.logo,
+.menu a,
+.boton {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* 4. Cabecera */
+.cabecera {
+  padding: 24px 16px;
+  border-bottom: 1px solid #d6cbc0;
+  text-align: center;
+}
+
+.logo {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Selector descendiente */
+.logo span {
+  color: #c0622b;
+}
+
+/* 5. Menú de navegación (lista en horizontal sin flexbox) */
+.menu ul {
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu a {
+  color: #2b2622;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+/* Pseudoclase */
+.menu a:hover {
+  color: #c0622b;
+}
+
+/* 6. Botones: una clase base y dos variantes */
+.boton {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.boton-borde {
+  border: 2px solid #2b2622;
+  color: #2b2622;
+}
+
+.boton-borde:hover {
+  background-color: #2b2622;
+  color: #ffffff;
+}
+
+.boton-relleno {
+  border: 2px solid #c0622b;
+  background-color: #c0622b;
+  color: #ffffff;
+}
+
+.boton-relleno:hover {
+  border-color: #9e4e20;
+  background-color: #9e4e20;
+}
+
+/* 7. Sección de rutas: contenedor centrado con ancho máximo */
+.rutas {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 64px 16px;
+  text-align: center;
+}
+
+.rutas h1 {
+  margin: 0;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.subtitulo {
+  margin: 4px 0 40px;
+  color: #6b5f57;
+}
+
+/* 8. Tarjetas */
+.tarjeta {
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+  max-width: 100%;
+  margin: 0 12px 32px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.tarjeta img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  padding: 16px;
+  border-radius: 8px 8px 0 0;
+  background-color: #e2d8cd;
+  /* Reto: rayas diagonales */
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0 14px,
+    rgba(255, 255, 255, 0.45) 14px 28px
+  );
+}
+
+.tarjeta-cuerpo {
+  padding: 20px;
+}
+
+.tarjeta h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.etiqueta {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background-color: #6b5f57;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.descripcion {
+  margin: 0;
+  color: #6b5f57;
+  font-size: 0.9rem;
+}
+
+/* 9. Pie de página */
+.pie {
+  padding: 32px 16px;
+  background-color: #221d1a;
+  color: #b8aea5;
+  text-align: center;
+}
+
+/* Mayor especificidad que .logo: el color blanco solo en el pie */
+.pie .logo {
+  color: #ffffff;
+}
+
+.direccion {
+  margin: 0;
+  font-size: 0.85rem;
+}
